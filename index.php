@@ -63,7 +63,9 @@ $privacyTerms = [
 </head>
 
 <body>
+    <!----  HEADER  ---->
     <header>
+        <!----  HEADER - LEFT SIDE  ---->
         <div class="header-left">
             <div class="title-logo">
                 <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_74x24dp.png" alt="">
@@ -77,6 +79,7 @@ $privacyTerms = [
                 <li class="active"><a href="#">Domande frequenti</a></li>
             </ul>
         </div>
+        <!----  HEADER - RIGHT SIDE  ---->
         <div class="header-right">
             <a href="#" class="more-btn">
                 <i class="fa-solid fa-ellipsis"></i>
@@ -88,6 +91,7 @@ $privacyTerms = [
             </a>
         </div>
     </header>
+    <!----  MAIN SECTION  ---->
     <main>
         <?php foreach ($privacyTerms as $privacyParagraph) : ?>
             <section><?php echo $privacyParagraph["title"] . $privacyParagraph["paragraph"] ?></section>
