@@ -49,3 +49,50 @@ $privacyTerms = [
 ];
 
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Domande frequenti - Privacy e termini - Google</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <div class="title-logo">
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_74x24dp.png" alt="">
+                <span>Privacy e termini</span>
+            </div>
+            <ul>
+                <li><a href="#">Introduzione</a></li>
+                <li><a href="#">Norme sulla privacy</a></li>
+                <li><a href="#">Termini di servizio</a></li>
+                <li><a href="#">Tecnologie</a></li>
+                <li class="active"><a href="#">Domande frequenti</a></li>
+            </ul>
+        </div>
+        <div class="header-right">
+            <a href="#" class="more-btn">
+                <i class="fa-solid fa-ellipsis"></i>
+                <i class="fa-solid fa-ellipsis"></i>
+                <i class="fa-solid fa-ellipsis"></i>
+            </a>
+            <a href="#" class="propic-container">
+                <img src="https://friconix.com/jpg/fi-snsuxx-user-plus-solid.jpg" alt="profile picture">
+            </a>
+        </div>
+    </header>
+    <main>
+        <?php foreach ($privacyTerms as $privacyParagraph) : ?>
+            <section><?php echo $privacyParagraph["title"] . $privacyParagraph["paragraph"] ?></section>
+        <?php endforeach; ?>
+    </main>
+</body>
+
+</html>
