@@ -63,7 +63,7 @@ $privacyTerms = [
 </head>
 
 <body>
-    <!----  HEADER  ---->
+    <!-------  HEADER  ------->
     <header>
         <!----  HEADER - LEFT SIDE  ---->
         <div class="header-left">
@@ -91,7 +91,7 @@ $privacyTerms = [
             </a>
         </div>
     </header>
-    <!----  MAIN SECTION  ---->
+    <!--------  MAIN SECTION  -------->
     <main>
         <?php foreach ($privacyTerms as $privacyParagraph) : ?>
             <section><?php echo $privacyParagraph["title"] . $privacyParagraph["paragraph"] ?></section>
